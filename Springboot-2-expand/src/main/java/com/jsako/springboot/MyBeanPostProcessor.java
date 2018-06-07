@@ -11,7 +11,7 @@ public class MyBeanPostProcessor implements BeanPostProcessor {
 
 	@PostConstruct
 	public  void init(){
-		System.out.println("init");
+		System.out.println("init");  
 	}
 
 	@Override
