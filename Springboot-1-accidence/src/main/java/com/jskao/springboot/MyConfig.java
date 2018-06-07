@@ -1,10 +1,10 @@
 package com.jskao.springboot;
 
-import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
 
-@Configurable
+@Configuration
 public class MyConfig {
 
 	@Bean(name="myBean")
@@ -17,4 +17,36 @@ public class MyConfig {
 	public RunnableFactoryBean runnableFactoryBean(){
 		return new RunnableFactoryBean();
 	}
+	
+	
+	@Bean
+	public CarFactoryBean carFactoryBean(){
+		return new CarFactoryBean();
+	}
+
+	@Bean 
+	public Car createCar(CarFactoryBean carFactoryBean){
+		return carFactoryBean.create();
+	}
+	
+	@Bean
+	public Cat createCat(){
+		return new Cat();
+	}
+	
+	@Bean(initMethod="init",destroyMethod="destroy")
+	public Dog createDog(){
+		return new Dog();
+	}
+	
+	@Bean
+	public Animal createAnimal(){
+		return new Animal();
+	}
+	
+	@Bean
+	public UserDao createUserDao(){
+		return new UserDao();
+	}
+
 }
