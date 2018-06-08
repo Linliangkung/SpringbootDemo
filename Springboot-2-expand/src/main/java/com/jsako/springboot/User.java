@@ -15,6 +15,8 @@ public class User implements ApplicationContextAware{
     	this.applicationContext=applicationContext;
 	}
     
+    public User(){}
+    
 	public void show(){
 		System.out.println(applicationContext);
 	}
