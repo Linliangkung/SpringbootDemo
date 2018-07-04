@@ -13,9 +13,11 @@ public class App {
 		//1.直接在构造方法中注入
 		//2.实现ApplicationContextAware接口
 		//3.使用@Autowired
-		User user = applicationContext.getBean("user",User.class);
+		User user = (User) applicationContext.getBean("user");
 		user.show();
 		System.out.println(applicationContext);
-	
+		
+		Person person = applicationContext.getBean("super person",Person.class);
+		System.out.println(person.getName());
 	}
 }

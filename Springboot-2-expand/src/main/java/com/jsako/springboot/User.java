@@ -1,5 +1,7 @@
 package com.jsako.springboot;
 
+import javax.annotation.PostConstruct;
+
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
@@ -10,12 +12,15 @@ public class User implements ApplicationContextAware{
 	
 	//@Autowired
     private ApplicationContext applicationContext;
-	
-    public User(ApplicationContext applicationContext) {
-    	this.applicationContext=applicationContext;
+    
+	@PostConstruct
+    public void init(){
+    	System.out.println("User Init");
+    }
+    
+    public User() {
 	}
     
-    public User(){}
     
 	public void show(){
 		System.out.println(applicationContext);
@@ -24,9 +29,8 @@ public class User implements ApplicationContextAware{
 	@Override
 	public void setApplicationContext(ApplicationContext applicationContext)
 			throws BeansException {
-		//this.applicationContext=applicationContext;
+		System.out.println("==set");
+		this.applicationContext=applicationContext;
 	}
-	
-	
 	
 }
