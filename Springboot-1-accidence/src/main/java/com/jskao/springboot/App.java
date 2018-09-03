@@ -50,9 +50,8 @@ public class App {
 		System.out.println(userService);
 		
 		userService.serivce();
-		
+
 		context.close();
-		
-		
+
 	}
 }
