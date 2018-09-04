@@ -1,14 +1,21 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.jsako</groupId>
-  <artifactId>SpringbootDemo</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <packaging>pom</packaging>
-   <modules>
-     <module>Springboot-1-accidence</module>
-     <module>Springboot-2-expand</module>
-	 <module>Springboot-3-springboot-accidence</module>
-	 <module>Springboot-4-springboot-configure</module>
-	 <module>Springboot-5-springboot-configure-2</module>
-   </modules>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+   <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-dependencies</artifactId>
+        <version>1.5.14.RELEASE</version>
+    </parent>
+    <groupId>com.jsako</groupId>
+    <artifactId>SpringbootDemo</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <modules>
+        <module>Springboot-1-accidence</module>
+        <module>Springboot-2-expand</module>
+        <module>Springboot-3-springboot-accidence</module>
+        <module>Springboot-4-springboot-configure</module>
+        <module>Springboot-5-springboot-configure-2</module>
+        <module>Springboot-6-springboot-autoconfig</module>
+    </modules>
 </project>

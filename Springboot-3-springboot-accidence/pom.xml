@@ -16,7 +16,7 @@
 	</parent> -->
 
 	<!-- 方式二:采用 dependencyManagement 通过scope=import导入依赖管理 -->
-	<dependencyManagement>
+	<!--<dependencyManagement>
 		<dependencies>
 			<dependency>
 				<groupId>org.springframework.boot</groupId>
@@ -26,7 +26,7 @@
 				<scope>import</scope>
 			</dependency>
 		</dependencies>
-	</dependencyManagement>
+	</dependencyManagement>-->
 
 	<dependencies>
 		<dependency>
