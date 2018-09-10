@@ -1,6 +1,7 @@
 package com.jsako.springboot.config;
 
 import com.jsako.springboot.annotation.MyConditionOn;
+import com.jsako.springboot.bean.MyBean;
 import org.springframework.boot.SpringBootConfiguration;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
@@ -28,7 +29,7 @@ public class TestSpringConditionConfig {
 
 
     @Bean
-    @ConditionalOnMissingBean(name={"createRunnable1"})
+    //@ConditionalOnMissingBean(name={"createRunnable1"})
     public Runnable createRunnable2(){
         return () -> System.out.println("createRunnable2");
     }
@@ -39,4 +40,22 @@ public class TestSpringConditionConfig {
     public Runnable createRunnable3(){
         return () -> System.out.println("createRunnable3");
     }
+
+    @Bean
+    @ConditionalOnMissingBean
+    public MyBean myBean1(){
+        return new MyBean("bean1");
+    }
+
+    /**
+     * @CondiionalOnMissingBean  默认下如果spring上下文没有当前需要创建的类型的bean时，创建bean。如果有则不创建。
+     * name配置如果当前上下文有这个名字的bean就不创建,如果没有就创建。value配置如果当前上下文有这个类型(class)的bean就不创建,如果没有就创建
+     * @return
+     */
+    @Bean
+    @ConditionalOnMissingBean(name="createRunnable4")
+    public MyBean myBean2(){
+        return new MyBean("bean2");
+    }
+
 }

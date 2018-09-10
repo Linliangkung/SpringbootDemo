@@ -1,5 +1,6 @@
 package com.jsako.springboot;
 
+import com.jsako.springboot.bean.MyBean;
 import com.jsako.springboot.converter.EncodingConverter;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -24,7 +25,10 @@ public class App {
         Runnable createRunnable1 = application.getBean("createRunnable1", Runnable.class);
         createRunnable1.run();
 
-
+        MyBean myBean2 = application.getBean("myBean2", MyBean.class);
+        System.out.println(myBean2);
+//        MyBean myBean1 = application.getBean("myBean1", MyBean.class);
+//        System.out.println(myBean1);
     }
 
 }
