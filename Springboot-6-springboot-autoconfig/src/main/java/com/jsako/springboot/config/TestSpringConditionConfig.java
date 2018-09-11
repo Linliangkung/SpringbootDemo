@@ -42,7 +42,7 @@ public class TestSpringConditionConfig {
     }
 
     @Bean
-    @ConditionalOnMissingBean
+    //@ConditionalOnMissingBean
     public MyBean myBean1(){
         return new MyBean("bean1");
     }
