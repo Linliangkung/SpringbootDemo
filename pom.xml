@@ -18,5 +18,7 @@
         <module>Springboot-5-springboot-configure-2</module>
         <module>Springboot-6-springboot-autoconfig</module>
         <module>Springboot-7-springboot-enableprinciple</module>
+        <module>Springboot-8-springboot-enableautoconfiguration</module>
+        <module>Springboot-core-bean</module>
     </modules>
 </project>
