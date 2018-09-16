@@ -20,5 +20,6 @@
         <module>Springboot-7-springboot-enableprinciple</module>
         <module>Springboot-8-springboot-enableautoconfiguration</module>
         <module>Springboot-core-bean</module>
+        <module>Springboot-9-springboot-applicationevent</module>
     </modules>
 </project>

@@ -9,8 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>Springboot-8-springboot-enableautoconfiguration</artifactId>
-
+    <artifactId>Springboot-9-springboot-applicationevent</artifactId>
 
     <dependencies>
         <dependency>
@@ -21,10 +20,6 @@
             <groupId>com.jsako</groupId>
             <artifactId>Springboot-core-bean</artifactId>
             <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>com.google.code.gson</groupId>
-            <artifactId>gson</artifactId>
         </dependency>
     </dependencies>
 </project>
