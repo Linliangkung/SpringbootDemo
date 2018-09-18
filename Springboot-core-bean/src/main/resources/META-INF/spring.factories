@@ -1,1 +1,2 @@
+org.springframework.context.ApplicationContextInitializer=com.jsako.core.config.CorebeanApplicationContextInitializer
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.jsako.core.config.CoreConfig,com.jsako.core.config.User

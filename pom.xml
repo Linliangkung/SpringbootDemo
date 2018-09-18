@@ -21,5 +21,6 @@
         <module>Springboot-8-springboot-enableautoconfiguration</module>
         <module>Springboot-core-bean</module>
         <module>Springboot-9-springboot-applicationevent</module>
+        <module>Springboot-10-springboot-springbootexpand</module>
     </modules>
 </project>
