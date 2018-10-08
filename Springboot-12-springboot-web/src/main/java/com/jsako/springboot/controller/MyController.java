@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
+import java.io.File;
 
 /**
  * @Date 2018/9/20
@@ -17,7 +18,14 @@ public class MyController {
 
     @GetMapping("/helloworld")
     public String helloworld(HttpServletRequest request){
-        System.out.println(request.getRealPath("test"));
+        System.out.println(request.getServletContext().getRealPath("/test"));
+        File file =new File("src/main/webapp");
+        System.out.println(file.getAbsolutePath());
+        System.out.println(file.exists()?"存在":"不存在");
+
+        System.out.println("=====================");
+
+        System.out.println(getClass().getClassLoader().getResource("").getFile().toString());
         return "hello world良劲";
     }
 
