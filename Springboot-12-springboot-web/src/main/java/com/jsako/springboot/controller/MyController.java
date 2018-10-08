@@ -4,6 +4,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletRequest;
+
 /**
  * @Date 2018/9/20
  * @Author LLJ
@@ -14,7 +16,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class MyController {
 
     @GetMapping("/helloworld")
-    public String helloworld(){
+    public String helloworld(HttpServletRequest request){
+        System.out.println(request.getRealPath("test"));
         return "hello world良劲";
     }
 
