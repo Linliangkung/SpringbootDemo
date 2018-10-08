@@ -26,6 +26,8 @@ public class MyController {
         System.out.println("=====================");
 
         System.out.println(getClass().getClassLoader().getResource("").getFile().toString());
+
+        System.out.println(System.getProperty("user.dir"));
         return "hello world良劲";
     }
 
