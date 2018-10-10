@@ -1,6 +1,8 @@
 package com.jsako.springboot.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -22,5 +24,11 @@ public class LoginController {
         }else{
             return "fail";
         }
+    }
+
+    @GetMapping("/login")
+    public String loginPage(Model model){
+        model.addAttribute("username","林良劲");
+        return "loginPage";
     }
 }

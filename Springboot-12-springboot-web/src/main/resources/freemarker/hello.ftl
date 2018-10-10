@@ -1,0 +1,1 @@
+<h1>hello Freemarker</h1>
