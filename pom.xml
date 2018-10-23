@@ -29,5 +29,6 @@
         <module>Springboot-starter-redis</module>
         <module>Springboot-15-mystarter</module>
         <module>Springboot-16-springboot-log</module>
+        <module>Springboot-17-springboot-actuator-monitor</module>
     </modules>
 </project>
