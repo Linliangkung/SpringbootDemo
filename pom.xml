@@ -26,5 +26,8 @@
         <module>Springboot-12-springboot-web</module>
         <module>Springboot-13-springboot-web-2</module>
         <module>Springboot-14-customize-tomcat</module>
+        <module>Springboot-starter-redis</module>
+        <module>Springboot-15-mystarter</module>
+        <module>Springboot-16-springboot-log</module>
     </modules>
 </project>
