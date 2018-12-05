@@ -30,5 +30,6 @@
         <module>Springboot-15-mystarter</module>
         <module>Springboot-16-springboot-log</module>
         <module>Springboot-17-springboot-actuator-monitor</module>
+        <module>Springboot-18-springboot-test</module>
     </modules>
 </project>
