@@ -31,5 +31,7 @@
         <module>Springboot-16-springboot-log</module>
         <module>Springboot-17-springboot-actuator-monitor</module>
         <module>Springboot-18-springboot-test</module>
+        <module>Springboot-19-springboot-provider</module>
+        <module>Springboot-20-springboot-customer</module>
     </modules>
 </project>
